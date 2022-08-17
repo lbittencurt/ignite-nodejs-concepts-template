@@ -78,7 +78,7 @@ describe('Todos', () => {
         deadline: todoDate
       })
       .set('username', userResponse.body.username);
-
+    
     const response = await request(app)
       .put(`/todos/${todoResponse.body.id}`)
       .send({
